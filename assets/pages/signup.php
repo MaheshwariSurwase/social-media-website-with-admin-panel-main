@@ -61,15 +61,54 @@
                 </div>
                 <?=showError('password')?>
 
+                <label for="">Enter Captcha</label>
+									<div class="form-row" style="display:flex">
+										<div class="form-group col-md-6" style="margin:5px">
+											<input type="text" class="form-control" readonly id="capt" >
+										</div>
+										<!-- <p>huhhhhh</p> -->
+										<div class="form-group col-md-6" style="margin:5px">
+											<input type="text" class="form-control" id="textinput" >
+										</div>
+									</div>
 
                 <div class="mt-3 d-flex justify-content-between align-items-center">
-                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                    <button class="btn btn-primary btn-block" onclick="validcap()" type="submit">Sign Up</button>
                     <a href="?login" class="text-decoration-none">Already have an account ?</a>
 
 
                 </div>
 
             </form>
+            <h6>Captcha not visible <img src="assets\images\profile\refresh.jpg" onclick="cap()" style="height:30px; width:30px;"></h6>
+
         </div>
     </div>
+    <script type="text/javascript">
+  function cap(){
+    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                 ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
+                 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '!','@','#','$','%','^','&','*','+'];
+                 var a = alpha[Math.floor(Math.random()*71)];
+                 var b = alpha[Math.floor(Math.random()*71)];
+                 var c = alpha[Math.floor(Math.random()*71)];
+                 var d = alpha[Math.floor(Math.random()*71)];
+                 var e = alpha[Math.floor(Math.random()*71)];
+                 var f = alpha[Math.floor(Math.random()*71)];
+
+                 var final = a+b+c+d+e+f;
+                 document.getElementById("capt").value=final;
+               }
+               function validcap(){
+                var stg1 = document.getElementById('capt').value;
+                var stg2 = document.getElementById('textinput').value;
+                if(stg1==stg2){
+                  alert("Form is validated Succesfully");
+                  return true;
+                }else{
+                  alert("Please enter a valid captcha");
+                  return false;
+                }
+               }
+</script>
 

@@ -1,10 +1,9 @@
-
-    <div class="login">
+<div class="login">
         <div class="col-sm-12 col-md-4 bg-white border rounded p-4 shadow-sm">
             <form method="post" action="assets/php/actions.php?login">
                 <div class="d-flex justify-content-center">
 
-                    <img class="mb-4" src="assets/images/instagramlogo.png" height="40" width="230" alt="" height="45">
+                    <img class="mb-4" src="assets\images\instagramlogo.png" alt="" height="60" width="200">
                 </div>
                 <h1 class="h5 mb-3 fw-normal">Please sign in</h1>
 
