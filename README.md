@@ -5,7 +5,7 @@ https://github.com/MaheshwariSurwase/social-media-website-with-admin-panel-main/
 
 
 # instagram website
-Developed By Aditya Battin and Maheshwari Surwase
+Maheshwari Surwase
 
 # Features:-
 Login, Signup, Forgot password (with email verification).
