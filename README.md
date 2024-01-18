@@ -1,5 +1,5 @@
 # instagram website
-Developed By Aditya Battin and Maheshwari Surwase
+Developed Maheshwari Surwase
 
 # Features:-
 Login, Signup, Forgot password (with email verification).
